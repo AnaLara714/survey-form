@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Empresa Emprise</title>
+  </head>
+  <body>
+    <h1 id="title">Compatilhe sua experiência</h1>
+    <p id="description">
+      Agradecemos por você tirar um tempo para avaliar nossos serviços!
+    </p>
+    <p>Estamos sempre dispostos a entregar o melhor para nossos clientes.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Nome:
+          <input required id="name" type="text" placeholder="Seu nome completo"
+        /></label>
+        <label id="email-label" for="email"
+          >Email:
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="seuemail@email.com"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="number">
+          Idade:
+          <input id="number" type="number" min="13" max="99" placeholder="99"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Como conheceu nossa empresa?
+          <select id="dropdown">
+            <option>(selecione)</option>
+            <option>Instagram</option>
+            <option>Google</option>
+            <option>LinkedIn</option>
+            <option>Recomendação</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >De 1 a 5, o quanto você recomendaria nossos serviços para
+          alguém?</label
+        >
+        <label
+          ><input
+            class="inline"
+            name="recomendation"
+            value="1"
+            type="radio"
+          />1</label
+        >
+        <label
+          ><input
+            class="inline"
+            name="recomendation"
+            value="2"
+            type="radio"
+          />2</label
+        >
+        <label
+          ><input
+            class="inline"
+            name="recommendation"
+            value="3"
+            type="radio"
+          />3</label
+        >
+        <label
+          ><input
+            class="inline"
+            name="recommendation"
+            value="4"
+            type="radio"
+          />4</label
+        >
+        <label
+          ><input
+            class="inline"
+            name="recommendation"
+            value="5"
+            type="radio"
+          />5</label
+        >
+      </fieldset>
+      <fieldset>
+        <label>Por qual(ais) serviço(s) você recomendaria nossa empresa?</label>
+        <label
+          ><input
+            class="inline"
+            value="Atendimento"
+            type="checkbox"
+          />Atendimento</label
+        >
+        <label
+          ><input
+            class="inline"
+            value="Qualidade"
+            type="checkbox"
+          />Qualidade</label
+        >
+        <label
+          ><input class="inline" value="Preço" type="checkbox" />Preço</label
+        >
+      </fieldset>
+      <fieldset>
+        <label>Qual seu nível de satifação com nossos serviços?</label>
+        <label
+          ><input
+            class="inline"
+            value="insatisfeito"
+            name="satisfaction"
+            type="radio"
+          />Insatisfeito</label
+        >
+        <label
+          ><input
+            class="inline"
+            value="satisfeito"
+            name="satisfaction"
+            type="radio"
+          />Satisfeito</label
+        >
+        <label
+          ><input
+            class="inline"
+            value="muito-satisfeito"
+            name="satisfaction"
+            type="radio"
+          />Muito satisfeito</label
+        >
+      </fieldset>
+      <fieldset>
+        <label
+          >Deixe alguma sugestão em que podemos melhorar:
+          <textarea
+            rows="4"
+            cols="40"
+            placeholder="Gostaria que a empresa..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <button type="submit" id="submit">Enviar respostas</button>
+    </form>
+  </body>
+</html>
